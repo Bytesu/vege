@@ -15,9 +15,9 @@
 	<mvc:resources location="/assets/" mapping="/assets/**" />
 	
 	<!-- 扫描所有的controller -->
-	<context:component-scan base-package="org.code.controller" />
+	<context:component-scan base-package="com。veg.controller" />
 	<!-- 静态资源配置 -->
-	<mvc:resources mapping="/**" location="/"  />
+	<!-- <mvc:resources mapping="/**" location="/"  /> -->
 	 <!--定义异常处理页面-->
     <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <property name="exceptionMappings">
@@ -27,4 +27,5 @@
             </props>
         </property>
     </bean>
+    
 </beans> 
